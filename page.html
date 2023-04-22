@@ -1,0 +1,77 @@
+<html>
+  <head>
+     
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="\style.css">
+     
+  </head>
+
+  <body>
+    
+    <header>
+      <h1>Expense Tracker</h1>
+    </header>
+
+    <main>
+      
+      <div class="expense-form">
+        <h2>Add Expense</h2>
+        <form id="expense-form">
+          <label for="name">Expense Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="amount">Expense Amount:</label>
+          <input type="number" id="amount" name="amount" required>
+
+          <label for="date">Expense Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="category">Expense Category:</label>
+          <select id="category" name="category" required>
+            <option value="">Select Category</option>
+            <option value="grocery">Grocery</option>
+            <option value="utilities">Utilities</option>
+            <option value="entertainment">Entertainment</option>
+          </select>
+          <button type="submit" class="buttonSave">Add a new expense</button>
+          
+        </form>
+      </div>
+       
+      <div class="filters">
+        <label for="filter-date">Filter by date:</label>
+        <input type="date" id="filter-date" name="filter-date">
+      
+        <label for="filter-category">Filter by category:</label>
+        <select id="filter-category" name="filter-category">
+          <option value="">All</option>
+          <option value="grocery">Grocery</option>
+          <option value="utilities">Utilities</option>
+          <option value="entertainment">Entertainment</option>
+        </select>
+        <button type="button" class="buttonFilter" onclick="filterExpenses()">Filter</button>
+        <button type="button" class="buttonReset" onclick="resetFilters()">Reset</button>
+      </div>
+      
+        <section class="content">
+          <table class="table">
+              <thead>
+        
+            <tr>
+              <th>Expense Name</th>
+              <th>Expense Amount</th>
+              <th>Expense Date</th>
+              <th>Expense Category</th>
+            </tr>
+          </thead>
+          <tbody id="expenseTable">
+          </tbody>
+        </table>
+      </div>
+
+      
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+
