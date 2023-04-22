@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#beefef;
+}
+
+
+header {
+  background-color:#a9f6f6;
+  color: hsl(310, 100%, 1%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+header h7 {
+  font-size: 36px;
+}
+
+ 
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.expense-form {
+  margin-bottom: 20px;
+  border: 1px solid hsl(240, 86%, 48%);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.expense-form h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.expense-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.expense-form input,
+.expense-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid hwb(0 14% 7%);
+  border-radius: 5px;
+}
+.buttonFilter {
+  background-color: hsl(266, 90%, 15%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.buttonReset {
+  background-color: hsl(266, 90%, 15%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.expense-form button {
+  background-color: hsl(266, 90%, 15%);
+  color: #e4dded;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.editButton {
+  background-color: hsl(266, 78%, 2%);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: hsl(266, 78%, 2%);
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expense-list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.expense-list h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 10px;
+}
+
+.filters input,
+.filters select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+table td:last-child {
+  text-align: center;
+}
+
+table td button {
+  background-color: hwb(260 13% 35%);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+
